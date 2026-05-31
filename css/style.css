@@ -1,4 +1,6 @@
 :root {
+
+.form-control,
 .form-select {
   border-radius: 14px;
   border: 1px solid var(--gris-suave);
@@ -68,4 +70,5 @@ footer {
     display: inline-block;
     margin-top: 0.5rem;
   }
+}
 }

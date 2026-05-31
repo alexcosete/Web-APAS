@@ -1,0 +1,52 @@
+<section id="buzon" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mb-5">
+        <h2 class="section-title">Buzón <span>vecinal</span></h2>
+        <p class="fs-5">Comparte propuestas, quejas, necesidades o ideas para mejorar el barrio.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <form id="formBuzon" class="card-custom p-4 p-md-5">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@email.com" required>
+            </div>
+            <div class="col-md-6">
+              <label for="categoria" class="form-label">Tipo de mensaje</label>
+              <select id="categoria" class="form-select" required>
+                <option value="">Selecciona una opción</option>
+                <option>Propuesta</option>
+                <option>Queja</option>
+                <option>Incidencia</option>
+                <option>Actividad</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="zona" class="form-label">Zona del barrio</label>
+              <input type="text" class="form-control" id="zona" placeholder="Calle, plaza o zona">
+            </div>
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" class="form-control" rows="5" placeholder="Cuéntanos tu propuesta o incidencia" required></textarea>
+            </div>
+            <div class="col-12 d-grid d-md-flex justify-content-md-end">
+              <button type="submit" class="btn btn-primary-custom">Enviar al buzón</button>
+            </div>
+          </div>
+          <div id="mensajeConfirmacion" class="alert alert-success mt-4 d-none" role="alert">
+            Gracias por participar. Tu mensaje ha sido registrado de forma demostrativa.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

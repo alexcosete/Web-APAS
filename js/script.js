@@ -36,3 +36,25 @@ if (backToTop) {
 if (formBuzon) {
   formBuzon.addEventListener('submit', handleBuzonSubmit);
 }
+
+// Contacto //
+
+const formContacto = document.getElementById("formContacto");
+const mensajeContacto = document.getElementById("mensajeContacto");
+
+function handleContactoSubmit(event) {
+  event.preventDefault();
+
+  if (!formContacto || !mensajeContacto) return;
+
+  mensajeContacto.classList.remove("d-none");
+  formContacto.reset();
+
+  setTimeout(() => {
+    mensajeContacto.classList.add("d-none");
+  }, 5000);
+}
+
+if (formContacto) {
+  formContacto.addEventListener("submit", handleContactoSubmit);
+}
